@@ -141,7 +141,8 @@ In `tools/`:
   `SHUTTER_WAV`, `POWERON_WAV` (11025 Hz mono 16-bit, at most the slot).
 
 Reverse engineering: Ghidra headless project under `build/ghidra/`, decompiled
-C in `decomp/c100.c`, string→function index in `decomp/strings.tsv`
+C in `decomp/c100.c`, string→function index in `decomp/strings.tsv` (generated
+locally by `tools/ghidra/ExportDecomp.java`, not committed: it is Godox's code)
 (scripts in `tools/ghidra/`). Raw disassembly via Homebrew `llvm-mc
 --disassemble` on bytes sliced from the image (disassemble word by word:
 literal pools are invalid instructions, and llvm-mc silently drops those,
