@@ -13,3 +13,7 @@
 /previews/films
 /previews/films_v2
 __pycache__
+
+# Godox's firmware and its decompile: local only (get the firmware from godox.com)
+/Godox_C100_*.zip
+/decomp
